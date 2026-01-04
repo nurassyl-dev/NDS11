@@ -1,0 +1,739 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BusParts KZ — Запчасти для автобусов из Китая • НДС 16%</title>
+  <meta name="description" content="Премиальные запчасти для автобусов: каталог цен без НДС, расчет НДС 16% в корзине и при оформлении заказа."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Display:wght@500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Перейти к содержимому</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#top" class="brand-link" aria-label="На главную">
+          <span class="brand-mark" aria-hidden="true">BP</span>
+          <strong>BusParts KZ</strong>
+        </a>
+        <div class="brand-meta">
+          <small>Запчасти для автобусов • Импорт из Китая</small>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Навигация">
+        <ul class="nav-list">
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#cart">Корзина</a></li>
+          <li><a href="#checkout">Оформление</a></li>
+          <li><a href="#vat">НДС</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn" id="openCartBtn" aria-controls="cart" aria-expanded="false">
+          Корзина: <span id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+        <section class="hero">
+      <div class="container hero-card">
+        <div class="hero-content">
+          <span class="hero-badge">Поставка для автобусных парков</span>
+          <h1>Премиальные запчасти для автобусных парков</h1>
+          
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#catalog">Посмотреть каталог</a>
+            <a class="btn" href="#checkout">Оформить покупку</a>
+          </div>
+
+          <div class="notice">
+            <strong>Важно:</strong> НДС 16% рассчитывается в корзине и на оформлении заказа.
+          </div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="hero-media-image"></div>
+          <div class="hero-dots">
+            <span></span>
+            <span class="active"></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CATALOG ===================== -->
+    <section class="section catalog" id="catalog" aria-label="Каталог товаров">
+      <div class="container">
+        <header class="section-header">
+          <h2>Каталог запчастей (цены без НДС)</h2>
+          <p>Фильтруйте по категориям и сразу видьте расчет НДС в корзине.</p>
+        </header>
+
+        <!-- Панель поиска и фильтров -->
+        <form class="catalog-toolbar" id="catalogToolbar" action="#" method="get">
+          <label>
+            <span>Поиск</span>
+            <input type="search" id="searchInput" placeholder="Например: тормоз, фильтр, фара, BP-001" />
+          </label>
+
+          <label>
+            <span>Категория</span>
+            <select id="categorySelect">
+              <option value="all" selected>Все</option>
+              <option value="brakes">Тормозная система</option>
+              <option value="engine">Двигатель</option>
+              <option value="electro">Электрика</option>
+              <option value="body">Кузов / Оптика</option>
+              <option value="suspension">Подвеска</option>
+              <option value="salon">Салон</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Валюта</span>
+            <select id="currencySelect">
+              <option value="KZT" selected>KZT (₸)</option>
+            </select>
+          </label>
+        </form>
+
+        <!-- Сетка товаров -->
+        <div class="product-grid" id="productGrid">
+
+          <!-- 1 -->
+          <article class="product-card"
+                   data-product-id="BP-001"
+                   data-category="brakes"
+                   data-price-net="18500"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-001.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Колодки тормозные передние (универсальные)</h3>
+            <p class="product-desc">Комплект 4 шт. Для городских автобусов. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-001</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">18 500 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 2 -->
+          <article class="product-card"
+                   data-product-id="BP-002"
+                   data-category="brakes"
+                   data-price-net="32900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-002.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Диск тормозной усиленный (передний)</h3>
+            <p class="product-desc">Толщина повышенная, термостойкий сплав. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-002</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">32 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 3 -->
+          <article class="product-card"
+                   data-product-id="BP-003"
+                   data-category="engine"
+                   data-price-net="12900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-003.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Фильтр масляный (дизель)</h3>
+            <p class="product-desc">Подходит для популярных дизельных моторов автобусов. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-003</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">12 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 4 -->
+          <article class="product-card"
+                   data-product-id="BP-004"
+                   data-category="engine"
+                   data-price-net="21900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-004.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Фильтр топливный (тонкой очистки)</h3>
+            <p class="product-desc">Стабильная подача топлива, ресурс увеличенный. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-004</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">21 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 5 -->
+          <article class="product-card"
+                   data-product-id="BP-005"
+                   data-category="engine"
+                   data-price-net="48900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-005.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Насос водяной (помпа)</h3>
+            <p class="product-desc">Для систем охлаждения автобусов. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-005</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">48 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 6 -->
+          <article class="product-card"
+                   data-product-id="BP-006"
+                   data-category="electro"
+                   data-price-net="27900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-006.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Генератор 24V (универсальный)</h3>
+            <p class="product-desc">Стабильная зарядка, 24V, крепёж стандарт. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-006</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">27 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 7 -->
+          <article class="product-card"
+                   data-product-id="BP-007"
+                   data-category="electro"
+                   data-price-net="15900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-007.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Стартер 24V (компакт)</h3>
+            <p class="product-desc">Быстрый запуск, для дизельных двигателей. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-007</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">15 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 8 -->
+          <article class="product-card"
+                   data-product-id="BP-008"
+                   data-category="body"
+                   data-price-net="34900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-008.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Фара передняя левая (LED)</h3>
+            <p class="product-desc">Яркий свет, защита от влаги. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-008</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">34 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 9 -->
+          <article class="product-card"
+                   data-product-id="BP-009"
+                   data-category="body"
+                   data-price-net="34900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-009.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Фара передняя правая (LED)</h3>
+            <p class="product-desc">Комплект к левой фаре, одинаковая оптика. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-009</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">34 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 10 -->
+          <article class="product-card"
+                   data-product-id="BP-010"
+                   data-category="suspension"
+                   data-price-net="55900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-010.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Амортизатор задний усиленный</h3>
+            <p class="product-desc">Для повышенной нагрузки, плавность хода. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-010</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">55 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 11 -->
+          <article class="product-card"
+                   data-product-id="BP-011"
+                   data-category="suspension"
+                   data-price-net="79900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-011.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Подушка пневмоподвески (комплект)</h3>
+            <p class="product-desc">Комфорт и устойчивость, ресурс увеличенный. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-011</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">79 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 12 -->
+          <article class="product-card"
+                   data-product-id="BP-012"
+                   data-category="electro"
+                   data-price-net="9900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-012.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Датчик ABS (колесный)</h3>
+            <p class="product-desc">Стабильное торможение, совместимость высокая. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-012</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">9 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 13 -->
+          <article class="product-card"
+                   data-product-id="BP-013"
+                   data-category="salon"
+                   data-price-net="13900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-013.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Поручень салонный (алюминий, 1 м)</h3>
+            <p class="product-desc">Антикоррозийное покрытие, крепления стандарт. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-013</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">13 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 14 -->
+          <article class="product-card"
+                   data-product-id="BP-014"
+                   data-category="salon"
+                   data-price-net="25900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-014.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Дверной механизм (привод двери)</h3>
+            <p class="product-desc">Плавное открытие/закрытие, комплект крепежа. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-014</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">25 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+          <!-- 15 -->
+          <article class="product-card"
+                   data-product-id="BP-015"
+                   data-category="engine"
+                   data-price-net="19900"
+                   data-vat-rate="0.16"
+                   data-currency="KZT"
+                   data-image="images/BP-015.jpg">
+            <div class="product-media" aria-hidden="true"></div>
+
+            <h3 class="product-title">Ремень приводной (усиленный)</h3>
+            <p class="product-desc">Устойчивость к нагрузкам и температуре. Китай.</p>
+            <ul class="product-meta">
+              <li>Артикул: <strong>BP-015</strong></li>
+              <li>Склад: <span>В наличии</span></li>
+            </ul>
+            <div class="price-box">
+              <span>Цена без НДС:</span>
+              <strong class="price-net">19 900 ₸</strong>
+            </div>
+            <button type="button" class="btn add-to-cart" data-action="add-to-cart">В корзину</button>
+          </article>
+
+        </div>
+        <p class="empty-state" id="catalogEmpty" hidden>Ничего не найдено. Попробуйте изменить запрос или фильтр.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CART (раздельный "Купить товар" блок) ===================== -->
+    <section class="section cart" id="cart" aria-label="Корзина">
+      <div class="container">
+        <header class="section-header">
+          <h2>Корзина</h2>
+          <p>НДС 16% рассчитывается автоматически, суммы обновляются при изменении количества.</p>
+        </header>
+
+        <!-- Таблица корзины (JS будет добавлять строки) -->
+        <div class="cart-table-wrap">
+          <table class="cart-table" aria-describedby="cartHelp">
+            <caption id="cartHelp">
+              В корзине отображаются суммы без НДС, сумма НДС и итоговая стоимость.
+            </caption>
+            <thead>
+              <tr>
+                <th>Товар</th>
+                <th>Цена без НДС</th>
+                <th>Кол-во</th>
+                <th>Сумма без НДС</th>
+                <th>НДС 16%</th>
+                <th>Итого</th>
+                <th>Удалить</th>
+              </tr>
+            </thead>
+            <tbody id="cartBody">
+              <!-- JS вставляет строки -->
+              <tr>
+                <td colspan="7">Корзина пуста. Добавьте товары из каталога.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Карта/карточка покупки (раздельный блок "Купить") -->
+        <aside class="purchase-card" aria-label="Итоги покупки">
+          <h3>Итоги</h3>
+
+          <dl class="totals">
+            <div class="totals-row">
+              <dt>Сумма без НДС</dt>
+              <dd id="cartTotalNet">—</dd>
+            </div>
+            <div class="totals-row">
+              <dt>НДС (16%)</dt>
+              <dd id="cartTotalVat">—</dd>
+            </div>
+            <div class="totals-row">
+              <dt>Итого к оплате</dt>
+              <dd id="cartTotalGross">—</dd>
+            </div>
+          </dl>
+
+          <button type="button" class="btn primary" id="goCheckoutBtn">
+            Купить / Оформить заказ
+          </button>
+
+          <p class="small">
+            В счете/чеке будет отображено: ставка НДС 16%, сумма НДС и итог.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== CHECKOUT ===================== -->
+    <section class="section checkout" id="checkout" aria-label="Оформление заказа">
+      <div class="container">
+        <header class="section-header">
+          <h2>Оформление заказа</h2>
+          <p>Заполните данные — итог и НДС рассчитываются автоматически.</p>
+        </header>
+
+        <div class="checkout-layout">
+          <!-- Форма покупателя -->
+          <form class="checkout-form" id="checkoutForm">
+            <fieldset>
+              <legend>Контакты</legend>
+
+              <label>
+                <span>ФИО</span>
+                <input type="text" id="fullName" placeholder="Например: Нурсыл ..." required />
+              </label>
+
+              <label>
+                <span>Телефон</span>
+                <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" id="email" placeholder="example@mail.com" />
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Доставка</legend>
+
+              <label>
+                <span>Город</span>
+                <input type="text" id="city" placeholder="Алматы" required />
+              </label>
+
+              <label>
+                <span>Адрес</span>
+                <input type="text" id="address" placeholder="Улица, дом, офис/кв" required />
+              </label>
+
+              <label>
+                <span>Способ доставки</span>
+                <select id="deliveryMethod">
+                  <option value="courier" selected>Курьер</option>
+                  <option value="pickup">Самовывоз</option>
+                  <option value="transport">Транспортная компания</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Стоимость доставки (без НДС)</span>
+                <input type="text" id="deliveryPriceNet" placeholder="0" />
+                
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Оплата</legend>
+
+              <label>
+                <span>Метод оплаты</span>
+                <select id="paymentMethod">
+                  <option value="card" selected>Картой онлайн</option>
+                  <option value="cash">Наличные при получении</option>
+                  <option value="invoice">Счет для юр.лица (ЭСФ)</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Комментарии</span>
+                <textarea id="comment" rows="3" placeholder="Пожелания по доставке, время и т.д."></textarea>
+              </label>
+            </fieldset>
+
+            <button type="submit" class="btn primary" id="placeOrderBtn">
+              Подтвердить заказ
+            </button>
+            <div class="order-result" id="orderResult" role="status" aria-live="polite" hidden></div>
+          </form>
+
+          <!-- Итоги заказа -->
+          <aside class="checkout-summary" aria-label="Сводка заказа">
+            <h3>Сводка заказа</h3>
+
+            <div class="summary-box">
+              <p><strong>Ставка НДС:</strong> <span id="vatRateLabel">16%</span></p>
+              <div class="summary-items">
+                <h4>Выбранные товары</h4>
+                <ul id="summaryItems"></ul>
+              </div>
+
+              <dl class="totals">
+                <div class="totals-row">
+                  <dt>Товары без НДС</dt>
+                  <dd id="sumGoodsNet">—</dd>
+                </div>
+                <div class="totals-row">
+                  <dt>НДС по товарам</dt>
+                  <dd id="sumGoodsVat">—</dd>
+                </div>
+                <div class="totals-row">
+                  <dt>Товары с НДС</dt>
+                  <dd id="sumGoodsGross">—</dd>
+                </div>
+
+                <hr />
+
+                <div class="totals-row">
+                  <dt>Доставка без НДС</dt>
+                  <dd id="sumDeliveryNet">—</dd>
+                </div>
+                <div class="totals-row">
+                  <dt>НДС по доставке</dt>
+                  <dd id="sumDeliveryVat">—</dd>
+                </div>
+                <div class="totals-row">
+                  <dt>Доставка с НДС</dt>
+                  <dd id="sumDeliveryGross">—</dd>
+                </div>
+
+                <hr />
+
+                <div class="totals-row">
+                  <dt><strong>ИТОГО К ОПЛАТЕ</strong></dt>
+                  <dd id="sumGrandTotal"><strong>—</strong></dd>
+                </div>
+              </dl>
+
+              <p class="small">
+                Для плательщиков НДС: чек/счет включает сумму НДС 16% и итог.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VAT SECTION ===================== -->
+    <section class="section vat" id="vat" aria-label="Информация о НДС и импорте">
+      <div class="container">
+        <h2>НДС и импорт из Китая (логика для учета)</h2>
+
+        <div class="info-grid">
+          <article class="info-card" id="import-vat">
+            <h3>Импортный НДС</h3>
+            <p>
+              При ввозе товара вы платите НДС государству на таможне.
+              Затем эта сумма идет в зачет (входящий НДС).
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Продажа</h3>
+            <p>
+              При продаже клиенту вы начисляете НДС 16%.
+              К уплате в бюджет — разница: <em>НДС с продажи − НДС на таможне</em>.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Что показывать на сайте</h3>
+            <ul>
+              <li>Цена без НДС</li>
+              <li>Ставка НДС (16%)</li>
+              <li>Сумма НДС</li>
+              <li>Итого к оплате</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>BusParts KZ</strong> — импорт запчастей из Китая • НДС 16% • Казахстан</p>
+    </div>
+  </footer>
+
+  <!-- Шаблон строки корзины для JS -->
+  <template id="cartRowTemplate">
+    <tr class="cart-row" data-cart-product-id="">
+      <td class="cart-name"></td>
+      <td class="cart-price-net"></td>
+      <td class="cart-qty">
+        <button type="button" class="qty-btn" data-action="qty-minus" aria-label="Уменьшить">−</button>
+        <span class="qty-value" aria-label="Количество">1</span>
+        <button type="button" class="qty-btn" data-action="qty-plus" aria-label="Увеличить">+</button>
+      </td>
+      <td class="cart-sum-net"></td>
+      <td class="cart-sum-vat"></td>
+      <td class="cart-sum-gross"></td>
+      <td>
+        <button type="button" class="btn danger" data-action="remove">Удалить</button>
+      </td>
+    </tr>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
