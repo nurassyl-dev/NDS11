@@ -24,7 +24,7 @@
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#39;");
   const normalizeText = (value) => (value ? value.toString().trim() : "");
-  const managerPhone = "87713226575";
+  const managerPhone = "77713226575"; // 7 + 771 + 3226575
   const managerPhoneDisplay = "+7 771 322-65-75";
   const deliveryLabels = {
     courier: "Курьер",
